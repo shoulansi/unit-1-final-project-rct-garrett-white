@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (
-        <header>
+        <header className="header">
             <h1>
                 <a href="/newevent"><button>+</button></a>
-                Rock Climb Together
+                <a href="/">Rock Climb Together</a>
             </h1>
+            <nav className="nav">
+                <Link to="/about">About Us</Link>
+            </nav>
         </header>
     );
 };
